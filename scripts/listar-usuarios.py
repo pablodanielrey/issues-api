@@ -9,8 +9,8 @@ if __name__ == '__main__':
     KEY = os.environ.get('KEY')
 
     from redminelib import Redmine
-    print('ingresando a redmine usando {}'.format(KEY))
-    redmine = Redmine('https://pedidos.econo.unlp.edu.ar', key=KEY)
 
+    print('ingresando a redmine usando {}'.format(KEY))
+    redmine = Redmine('https://pedidos.econo.unlp.edu.ar', impersonate='31381082', key=KEY)
     for u in redmine.user.all():
         print(f"Id: {u.id}, Nombre: {u.firstname} {u.lastname}, Usuario: {u.login}")
