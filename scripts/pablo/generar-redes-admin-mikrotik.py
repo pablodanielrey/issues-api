@@ -1,3 +1,19 @@
+"""
+    genera los compandos necesarios apra creear las redes de administración básicas para cada piso.
+
+    swtichs
+    infraestructura 
+    camaras
+    aps
+
+    se le debe pasar el número de piso ya codificado a número de red
+    y la interface base a usar sobre la cual generar las redes y vlans.
+    ej:
+
+    python3 script.py 110 bond1
+    
+"""
+
 
 if __name__ == '__main__':
 
