@@ -1,0 +1,1 @@
+docker run --rm -ti -v /src/github/issues-api/scripts:/src/scripts -p 8080:80 --env-file=../.env --name scripts-redmine scripts:redmine bash

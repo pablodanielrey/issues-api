@@ -1,0 +1,10 @@
+FROM python:3.7-buster
+
+RUN apt-get update && apt-get install -y nano
+#COPY requirements.txt /src/
+#RUN pip3 install -r /src/requirements.txt
+RUN pip install -U python-redmine 
+EXPOSE 80 8080
+#VOLUME /src/
+
+#ENTRYPOINT ["entrypoint.sh"]
