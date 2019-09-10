@@ -6,5 +6,5 @@ RUN apt-get update && apt-get install -y nano
 RUN pip install -U python-redmine 
 EXPOSE 80 8080
 #VOLUME /src/
-
-#ENTRYPOINT ["entrypoint.sh"]
+WORKDIR /src/scripts/
+#ENTRYPOINT ["cd", "/src/scripts/"]
